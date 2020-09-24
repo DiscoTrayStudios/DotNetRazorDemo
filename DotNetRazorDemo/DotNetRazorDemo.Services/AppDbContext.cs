@@ -14,5 +14,6 @@ namespace DotNetRazorDemo.Services
             Database.Migrate();
         }
         public DbSet<User> Users { get; set; }
+        public DbSet<Class> Classes { get; set; }
     }
 }

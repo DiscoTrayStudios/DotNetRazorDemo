@@ -24,6 +24,11 @@ namespace DotNetRazorDemo.Services
             _userContext.Add(newuser);
         }
 
+        public IEnumerable<Class> getAllClasses()
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<User> getAllUsers()
         {
             return _userContext;

@@ -9,5 +9,7 @@ namespace DotNetRazorDemo.Services
     {
         IEnumerable<User> getAllUsers();
         void addUser(User user);
+
+        IEnumerable<Class> getAllClasses();
     }
 }

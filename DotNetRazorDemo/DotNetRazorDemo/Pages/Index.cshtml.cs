@@ -19,7 +19,9 @@ namespace DotNetRazorDemo.Pages
         [BindProperty]
         public User newUser { get; set; }
         public List<User> allUsers { get; set; }
-       
+
+        public List<Class> allClasses { get; set; }
+
         public IndexModel(ILogger<IndexModel> logger, IUserRepository userRepository)
         {
             _logger = logger;
@@ -29,6 +31,7 @@ namespace DotNetRazorDemo.Pages
         public void OnGet()
         {
             allUsers = (List<User>)_userRepository.getAllUsers();
+            allClasses = (List<Class>)_userRepository.getAllClasses();
         }
 
         public IActionResult OnPost()

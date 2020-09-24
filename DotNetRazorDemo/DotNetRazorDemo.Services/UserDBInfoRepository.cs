@@ -55,5 +55,10 @@ namespace DotNetDemo.Services
         {
             throw new NotImplementedException();
         }
+
+        public IEnumerable<Class> getAllClasses()
+        {
+            return _dbContext.Classes.ToList();
+        }
     }
 }

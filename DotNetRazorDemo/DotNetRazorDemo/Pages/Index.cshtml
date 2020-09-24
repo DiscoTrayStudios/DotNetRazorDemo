@@ -67,4 +67,33 @@
         </tbody>
     </table>
 
+    <div class="dropdown-divider"></div>
+    <h2> All Classes </h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Cource Code</th>
+                <th scope="col">Name</th>
+                <th scope="col">Year</th>
+                <th scope="col">Semester</th>
+                <th scope="col">Size</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Cl in Model.allClasses)
+            {
+                <tr>
+                    <th scope="row">@Cl.Id</th>
+                    <td>@Cl.Code</td>
+                    <td>@Cl.Name</td>
+                    <td>@Cl.Year</td>
+                    <td>@Cl.Semester</td>
+                    <td>@Cl.Size</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
 </div>
